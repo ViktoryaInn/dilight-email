@@ -1,0 +1,926 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Mulish:400,500,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Mulish"] {
+			font-family: 'Mulish', 'Roboto', arial, sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border:none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100%!important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+    
+		table td {
+			border-collapse: collapse;
+		}
+    
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		.logo-header-td {
+			padding-top: 23px;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+
+		.text-header-td {
+			padding-top: 12px;
+			padding-bottom: 26px;
+		}
+
+		.text-header-td td{
+			padding-top: 22px;
+			padding-bottom: 26px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.text-header-td span {
+			font-weight: 700; 
+			color:#ffffff; 
+			font-size: 30px;
+			letter-spacing: 0.001em;
+		}
+
+		.section-info-td td {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.section-info-td span {
+			font-weight: 400; 
+			color:#000000; 
+			font-size: 15px; 
+			line-height: 18px; 
+			letter-spacing: 0.02em;
+		}
+
+		.info-list td {
+			padding-bottom: 17px;
+		}
+		
+		.info-list td.info-list-item span {
+			padding-left: 20px;
+		}
+
+		.order-link-td {
+			padding-top: 18px;
+			padding-bottom: 20px;
+		}
+
+		.order-card-td {
+			padding-top: 13px;
+			padding-bottom: 16px;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		.order-link-td a {
+			font-size: 15px;
+			line-height: 15px;
+			font-weight: 500;
+			letter-spacing: 0.035em;
+			color: #000000;
+			text-decoration: none;
+		}
+
+		.order-link-td td.label span {
+			font-weight: 700;
+		}
+
+		.order-info-td {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.order-table-td {
+			padding-top: 18px;
+			padding-left: 28px;
+			padding-right: 20	px;
+			padding-bottom: 12px;
+		}
+
+		.order-table-td span {
+			font-size: 15px;
+			line-height: 15px;
+			font-weight: 400;
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+		
+		.order-table-td td.label span {
+			font-weight: 700;
+		}
+		
+		.order-table-td td.value {
+			padding-left: 45px;
+		}
+		
+		.order-table-td td.value,
+		.order-table-td td.label {
+			padding-bottom: 11px;
+		}
+
+		.order-sum-td {
+			padding-bottom: 23px;
+		}
+		
+		.order-sum-td td.label {
+			padding-top: 23px;
+			padding-bottom: 8px;
+			padding-left: 37px;
+			padding-right: 27px;
+		}
+		
+		.order-sum-td td.value {
+			padding-bottom: 24px;
+		}
+
+		.order-sum-td td.label span,
+		.order-sum-td td.value span {
+			font-size: 18px;
+			line-height: 18px;
+			font-weight: 500;
+			letter-spacing: 0.001em;
+			color: #000000;
+		}
+
+		.order-sum-td td.label span {
+			font-weight: 700;
+		}
+
+		.order-list-header-td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		.order-list-header-td span {
+			font-size: 15px; 
+			line-height: 16px; 
+			font-weight: 700; 
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+
+		.order-list-td {
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 9px;
+		}
+
+		.order-list-td table {
+			border-bottom: 1px solid #919191;
+		}
+
+		.order-list-td th {
+			padding-bottom: 4px;
+			border-bottom: 1px solid #919191;
+		}
+
+		.order-list-td th span {
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: 700;
+			letter-spacing: 0.02em;
+			color: #919191;
+		}
+		
+		.order-list-td td {
+			padding-top: 8px;
+			padding-bottom: 5px;
+		}
+
+		.order-list-td td span,
+		.order-list-td td p {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+			margin-right: 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: 500;
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+		
+		.order-list-td td p.crossed-out {
+			margin-top: 5px;
+			margin-bottom: 0;
+			margin-right: 0;
+			margin-left: 0;
+			padding: 0;
+			font-size: 11px;
+			line-height: 11px;
+			font-weight: 500;
+			letter-spacing: 0.02em;
+			color: #919191;
+			text-decoration: line-through;
+		}
+
+		.order-total-td {
+			padding-bottom: 22px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		
+		.order-total-td span {
+			font-size: 15px;
+			line-height: 16px;
+			font-weight: 400;
+			letter-spacing: 0.001em;
+			color: #000000;
+		}
+		
+		.order-total-td span.label {
+			font-weight: 700;
+		}
+		
+		.order-total-td span.discount {
+			color: #34bf29;
+		}
+
+		.product-delivery-point-td {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.product-delivery-point-td th {
+			padding-bottom: 16px;
+		}
+		
+		.product-delivery-point-td th>span {
+			font-size: 16px;
+			color: #000000;
+		}
+		
+		.product-delivery-point-td td>span {
+			font-size: 15px;
+			line-height: 18px;
+			color: #000000;
+		}
+
+		.product-delivery-point-td .delivery-point-td {
+			padding-right: 15px;
+		}
+		
+		.product-delivery-point-td .delivery-time-td {
+			padding-left: 10px;
+		}
+
+		.delivery-contact-info-td {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+
+		.delivery-contact-info-td th {
+			padding-bottom: 15px;
+		}
+
+		.delivery-contact-info-td span {
+			color: #000000;
+			font-size: 15px;
+		}
+
+		.yandex-link-td {
+			padding-left: 43px;
+		}
+
+		.section-hr-td {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.section-info-footer-td {
+			padding-top: 12px;
+			padding-bottom: 18px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		
+		.section-info-footer-td span {
+			font-size: 12px;
+			line-height: 12px;
+			font-weight: 500;
+			letter-spacing: 0.025em;
+			color: #b8b8b8;
+		}
+
+		.section-mobile-td span{
+			font-size: 25px;
+			font-weight: 400;
+			line-height: 0.6;
+			letter-spacing: 0.025em;
+			color: #ffffff;
+		}
+
+		.section-mobile-td span.bold{
+			font-weight: 700;
+		}
+
+		.footer-td td{
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.footer-td span {
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 13px;
+			letter-spacing: 0.03em;
+			color: #ffffff;
+		}
+		.section-info-td li {
+			font-weight: 500; 
+			color:#000000; 
+			font-size: 15px; 
+			line-height: 15px; 
+			letter-spacing: 0.025em;
+		}
+
+		.section-info-td ol {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+
+		.section-info-td li {
+			margin-left: 22px;
+		}
+
+		.section-contact-info-td {
+			padding-top: 22px;
+			padding-bottom: 18px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+
+		.section-contact-info-td span {
+			font-size: 15px;
+			line-height: 17px;
+			font-weight: 400;
+			letter-spacing: 0.032em;
+			color: #000000;
+		}
+
+		.contacts-td {
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+
+		.socials-contacts-td {
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<table cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td>
+				<table class="main table-600" cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#ffffff">
+					<tr>
+						<td class="logo-header-td">
+							<table class="table-250" cellpadding="0" cellspacing="0" width="240" align="center">
+								<tr>
+									<td>
+										<img src="img/LOGO.png" alt="delight-logo" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="text-header-td">
+							<table cellpadding="0" cellspacing="0" width="600" bgcolor="#45b4da">
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Заказ №000001 готов к выдаче</span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="section-info-td">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Здравствуйте, Иван Иванович!</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="18" width="600"></td>
+								</tr>
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">
+											Ваш заказ скомплектован и готов к выдаче. Забрать его можно по адресу: г. Москва, Скорняжный переулок, д. 6, стр. 1, до 2.02 17:00.
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="16" width="600"></td>
+								</tr>
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">
+											Если это Ваш третий или более заказ, Вы также можете оформить доставку. Для этого свяжитесь с нашими сотрудниками по телефону не позднее, чем за 2 часа до времени забора заказа.
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="10" width="600"></td>
+								</tr>
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">
+											Если Вы хотите изменить, дополнить или отменить заказ, просьба связаться с сотрудниками по телефону +7 (495) 118-40-47 или написать нам на почту&nbsp;
+										</span>
+										<a href="mailto: rent@delight.rent" alt="mail-link" style="font-family: Arial, Helvetica, sans-serif, 'Mulish'; font-size: 15px; font-weight: 400; line-height: 18px; letter-spacing: 0.02em; color: #000000; text-decoration: none; display: inline;">rent@delight.rent</a>
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">.</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="14" width="600"></td>
+								</tr>
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Спасибо, что Вы с нами.</span>
+									</td>
+								</tr>
+								<tr>
+									<td height="18" width="600"></td>
+								</tr>
+								<tr>
+									<td align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Ваш DeLight Rent.</span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-link-td" width="600" align="center">
+							<table cellpadding="0" cellspacing="0" bgcolor="#45b4da" style="border-radius: 10px;">
+								<tr>
+									<td class="order-card-td">
+										<a href="https://www.delight.rent/personal/profile/" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Подробности о заказе</a>
+									</td>
+								</tr>
+								
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-info-td" width="600" align="center">
+							<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#e8e8e8" style="border-radius: 10px;">
+								<tr>
+									<td width="100%" class="order-table-td">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Номер заказа:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">№000001</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Дата выдачи оборудования:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">01.01.22 17:00</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Дата возврата оборудования:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">03.01.22 17:00</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Количество смен (суток):</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">2 смены</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Город выдачи оборудования:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">г. Москва</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Город возврата оборудования:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">г. Санкт-Петербург</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="label" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">ФИО клиента:</span>
+												</td>
+												<td class="value" align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Иванов Иван Иванович</span>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr width="100%" align="center">
+									<td class="order-sum-td">
+										<table  cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="border-radius: 12px;">
+											<tr>
+												<td  class="label" align="center">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Сумма к оплате:</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="value" align="center">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">9 126 ₽</span>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-list-header-td" width="600" align="center">
+							<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Состав заказа</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-list-td"  width="600">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<th width="53%" align="left">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Оборудование</span>
+									</th>
+									<th align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Кол-во</span>
+									</th>
+									<th align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Цена</span>
+									</th>
+									<th align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Скидка</span>
+									</th>
+									<th align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Итог</span>
+									</th>
+								</tr>
+								<tr>
+									<td valign="top">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Радиопетличка Sennheiser EW 112P G3-B-X (комплект)</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">2</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">890 ₽</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">10%</span>
+									</td>
+									<td valign="top" align="center">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3 204 ₽</p>
+										<p class="crossed-out" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3 560 ₽</p>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Камера Sony A7 III Body</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">1</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3290 ₽</span>
+									</td>
+									<td valign="top" align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">10%</span>
+									</td>
+									<td valign="top" align="center">
+										<p style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">5 626 ₽</p>
+										<p class="crossed-out" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">6 580 ₽</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="order-total-td" width="600">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="68%"></td>
+									<td width="16%" align="left">
+										<span class="label" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Стоимость</span>
+									</td>
+									<td width="16%" align="right">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">10 140 ₽</span>
+									</td>
+								</tr>
+								<tr>
+									<td width="68%"></td>
+									<td width="16%" align="left">
+										<span class="label" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Скидка</span>
+									</td>
+									<td width="16%" align="right">
+										<span class="discount" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">-1 014 ₽</span>
+									</td>
+								</tr>
+								<tr>
+									<td width="68%"></td>
+									<td width="16%" align="left">
+										<span class="label" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Итог</span>
+									</td>
+									<td width="16%" align="right">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">9 126 ₽</span>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="product-delivery-point-td" width="600">
+							<table cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="delivery-point-td" width="53%">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<th align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Как найти пункт выдачи</span>
+												</th>
+											</tr>
+											<tr>
+												<td>
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">По Скорняжному переулку доходите до тупика. По правой стороне от Вас будет четырехэтажное красное, кирпичное здание. Обходим его слева, мимо последнего полосатого шлагбаума. Одна дверь с вывеской "DeLight" и кнопкой домофона.  Не забудьте взять с собой карту клиента или паспорт.</span>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="delivery-time-td" valign="top" width="47px">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<th align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Время работы пункта выдачи</span>
+												</th>
+											</tr>
+											<tr>
+												<td width="100%">
+													<table cellpadding="0" cellspacing="0" width="100%">
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Понедельник</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Вторник</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Среда</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Четверг</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Пятница</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Суббота</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Воскресенье</span>
+															</td>
+															<td align="right">
+																<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Круглосуточно</span>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											
+										</table>
+									</td>
+									
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="delivery-info-td" width="600">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="50%" class="yandex-link-td">
+										<a href="https://yandex.ru/maps/">
+											<img src="img/yandex.png" alt="yandex" width="235" />
+										</a>
+									</td>
+									<td width="50%" class="delivery-contact-info-td">
+										<table cellpadding="0" cellspacing="0">
+											<tr>
+												<th align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Контактная информация пункта выдачи</span>
+												</th>
+											</tr>
+											<tr>
+												<td align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</span>
+												</td>
+											</tr>
+											<tr>
+												<td align="left">
+													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">rent@delight.rent</span>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+						
+					</tr>
+					<tr>
+						<td class="section-mobile-td">
+							<table cellpadding="0" cellspacing="0" width="600">
+								<tr>
+									<td>
+										<a href="https://www.delight.rent/">
+											<img width="600" src="img/app-banner.png" alt="app-banner" />
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="section-contact-info-td" align="center">
+							<table cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Контактная информация</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="contacts-td">
+										<table cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Москва</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Санкт-Петербург</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (812) 467-40-42</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Нижний Новгород</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (831) 235-04-09</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Казань</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (843) 204-29-50</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Самара</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (846) 215-04-95</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Воронеж</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (473) 205-21-27</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Ростов-на-Дону</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (863) 333-97-21</span></td>
+											</tr>
+											<tr>
+												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Краснодар</span></td>
+												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (861) 212-10-52</span></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="socials-contacts-td">
+										<table cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td style="padding-right: 10px;">
+													<a href="https://vk.com/club10685817">
+														<img width="50" src="img/VK.png" alt="vk-icon" />
+													</a>
+												</td>
+												<td style="padding-right: 10px;">
+													<a href="https://t.me/DeLightRent_Bot">
+														<img width="50" src="img/Telegram.png" alt="telegram-icon" />
+													</a>
+												</td>
+												<td style="padding-right: 10px;">
+													<a href="https://www.instagram.com/delight.rent/">
+														<img width="50" src="img/Instagram.png" alt="instagram-icon" />
+													</a>
+												</td>
+												<td style="padding-right: 10px;">
+													<a href="https://m.me/133143086862718">
+														<img width="50" src="img/Facebook.png" alt="facebook-icon" />
+													</a>
+												</td>
+												<td style="padding-right: 10px;">
+													<a href="https://ok.ru/group/49824024756430/messages">
+														<img width="50" src="img/Ok.png" alt="ok-icon" />
+													</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td class="footer-td">
+							<table cellpadding="0" cellspacing="0" width="600" bgcolor="#45b4da">
+								<tr>
+									<td align="center">
+										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Если Вы по каким-то причинам остались недовольны уровнем нашего сервиса, пишите все Ваши вопросы и предложения на&nbsp;</span>
+										<a href="mailto: service@delight.rent" alt="mail-link" style="font-family: Arial, Helvetica, sans-serif, 'Mulish'; font-size: 13px; font-weight: 500; line-height: 13px; letter-spacing: 0.03em; color: #ffffff; text-decoration: none; display: inline;">service@delight.rent</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
