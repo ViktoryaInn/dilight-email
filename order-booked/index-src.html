@@ -217,7 +217,8 @@
 		}
 
 		.order-list-td td span,
-		.order-list-td td p {
+		.order-list-td td p,
+		.order-list-td td a {
 			margin-top: 0;
 			margin-bottom: 0;
 			margin-left: 0;
@@ -230,6 +231,17 @@
 			line-height: 12px;
 			font-weight: 500;
 			letter-spacing: 0.02em;
+			color: #000000;
+		}
+
+		.order-list-td td a {
+			text-decoration: none;
+		}
+		
+		.order-list-td td a:hover,
+		.order-list-td td a:focus,
+		.order-list-td td a:active {
+			text-decoration: none;
 			color: #000000;
 		}
 		
@@ -254,8 +266,8 @@
 		}
 		
 		.order-total-td span {
-			font-size: 15px;
-			line-height: 16px;
+			font-size: 14px;
+			line-height: 1.4;
 			font-weight: 400;
 			letter-spacing: 0.001em;
 			color: #000000;
@@ -286,7 +298,7 @@
 		
 		.product-delivery-point-td td>span {
 			font-size: 15px;
-			line-height: 18px;
+			line-height: 1.4;
 			color: #000000;
 		}
 
@@ -316,8 +328,22 @@
 			font-size: 15px;
 		}
 
+		.delivery-contact-info-td a {
+			color: #000000;
+			font-size: 15px;
+			text-decoration: none;
+			line-height: 1.4;
+		}
+
+		.delivery-contact-info-td a:hover,
+		.delivery-contact-info-td a:active,
+		.delivery-contact-info-td a:focus {
+			color: #000000;
+			text-decoration: none;
+		}
+
 		.yandex-link-td {
-			padding-left: 43px;
+			padding-left: 53px;
 		}
 
 		.section-hr-td {
@@ -389,11 +415,27 @@
 			padding-right: 30px;
 		}
 
-		.section-contact-info-td span {
+		.section-contact-info-td span,
+		.section-contact-info-td a {
 			font-size: 15px;
-			line-height: 17px;
+			line-height: 1.4;
 			font-weight: 400;
 			letter-spacing: 0.032em;
+			color: #000000;
+		}
+
+		.section-contact-info-td a {
+			margin-top: 0;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-left: 0;
+			text-decoration: none;
+		}
+
+		.section-contact-info-td a:hover, 
+		.section-contact-info-td a:active, 
+		.section-contact-info-td a:focus {
+			text-decoration: none;
 			color: #000000;
 		}
 
@@ -405,6 +447,10 @@
 		.socials-contacts-td {
 			padding-left: 30px;
 			padding-right: 30px;
+		}
+
+		.delivery-info-td {
+			padding-bottom: 15px;
 		}
 	</style>
 </head>
@@ -619,37 +665,37 @@
 									</th>
 								</tr>
 								<tr>
-									<td valign="top">
-										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Радиопетличка Sennheiser EW 112P G3-B-X (комплект)</span>
+									<td valign="center">
+										<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Радиопетличка Sennheiser EW 112P G3-B-X (комплект)</a>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">2</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">890 ₽</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">10%</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<p style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3 204 ₽</p>
 										<p class="crossed-out" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3 560 ₽</p>
 									</td>
 								</tr>
 								<tr>
-									<td valign="top">
-										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Камера Sony A7 III Body</span>
+									<td valign="center">
+										<a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Камера Sony A7 III Body</a>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">1</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">3290 ₽</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">10%</span>
 									</td>
-									<td valign="top" align="center">
+									<td valign="center" align="center">
 										<p style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">5 626 ₽</p>
 										<p class="crossed-out" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">6 580 ₽</p>
 									</td>
@@ -694,7 +740,7 @@
 						<td class="product-delivery-point-td" width="600">
 							<table cellpadding="0" cellspacing="0">
 								<tr>
-									<td class="delivery-point-td" width="53%">
+									<td class="delivery-point-td" valign="top" width="53%">
 										<table cellpadding="0" cellspacing="0">
 											<tr>
 												<th align="left">
@@ -791,7 +837,7 @@
 								<tr>
 									<td width="50%" class="yandex-link-td">
 										<a href="https://yandex.ru/maps/">
-											<img src="img/yandex.png" alt="yandex" width="235" />
+											<img src="img/yandex.png" alt="yandex" width="215" />
 										</a>
 									</td>
 									<td width="50%" class="delivery-contact-info-td">
@@ -803,12 +849,12 @@
 											</tr>
 											<tr>
 												<td align="left">
-													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</span>
+													<a href="tel:+7 (495) 118-40-47" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</a>
 												</td>
 											</tr>
 											<tr>
 												<td align="left">
-													<span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">rent@delight.rent</span>
+													<a href="mailto:rent@delight.rent" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">rent@delight.rent</a>
 												</td>
 											</tr>
 										</table>
@@ -844,35 +890,35 @@
 										<table cellpadding="0" cellspacing="0" width="100%">
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Москва</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</span></td>
+												<td align="right"><a href="tel:+7 (495) 118-40-47" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (495) 118-40-47</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Санкт-Петербург</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (812) 467-40-42</span></td>
+												<td align="right"><a href="tel:+7 (812) 467-40-42" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (812) 467-40-42</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Нижний Новгород</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (831) 235-04-09</span></td>
+												<td align="right"><a href="tel:+7 (831) 235-04-09" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (831) 235-04-09</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Казань</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (843) 204-29-50</span></td>
+												<td align="right"><a href="tel:+7 (843) 204-29-50" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (843) 204-29-50</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Самара</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (846) 215-04-95</span></td>
+												<td align="right"><a href="tel:+7 (846) 215-04-95" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (846) 215-04-95</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Воронеж</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (473) 205-21-27</span></td>
+												<td align="right"><a href="tel:+7 (473) 205-21-27" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (473) 205-21-27</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Ростов-на-Дону</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (863) 333-97-21</span></td>
+												<td align="right"><a href="tel:+7 (863) 333-97-21" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (863) 333-97-21</span></td>
 											</tr>
 											<tr>
 												<td align="left"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">Краснодар</span></td>
-												<td align="right"><span style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (861) 212-10-52</span></td>
+												<td align="right"><a href="tel:+7 (861) 212-10-52" style="font-family: Arial, Helvetica, sans-serif, 'Mulish';">+7 (861) 212-10-52</span></td>
 											</tr>
 										</table>
 									</td>
